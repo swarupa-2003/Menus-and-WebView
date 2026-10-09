@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:title="Menus and WebView"
+        app:titleTextColor="?attr/colorOnPrimary" />
+
+    <TextView
+        android:id="@+id/tvContext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Long-press here to open Context Menu"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="#E3F2FD" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
